@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Vendra Suryandala I.</title>
+    <link rel="shortcut icon" href="dist/img/hero/v.png" type="image/x-icon">
+    <link href="dist/output.css" rel="stylesheet">
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+<body>
+    <!-- Header start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="relative px-4 py-5 items-center">
+                    <a href="#home"><img src="dist/img/hero/v.png" width="33" height="20" class="absolute ml-0 items-center"/> <span class="font-bold relative pl-8 pt-1 text-xl text-blue hover:text-green transition duration-300 ease-in-out ">endra</span></a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:shadow-slate-500">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-green  transition duration-300 ease-in-out">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-green transition duration-300 ease-in-out">Tentang Saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-green transition duration-300 ease-in-out">Portofolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#kampus" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-green transition duration-300 ease-in-out">Pendidikan</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary dark:text-green transition duration-300 ease-in-out">Hubungi Saya</a>
+                            </li>
+                                       
+                            <li class="flex items-center pl-8 mt-3">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-blue font-bold dark:text-green hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">light</span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle"/>
+                                    <label for="dark-toggle">
+                                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-blue dark:bg-green p-1 transition duration-300 ease-in-out">
+                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-blue font-bold dark:text-green hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">dark</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+    <!-- Hero section start -->
+    <section id="home" class="pt-32 dark:bg-dark transition ease-in-out duration-300">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-base font-bold text-blue md:text-2xl dark:text-green transition duration-300  ease-in-out">Halo semua 👋, saya <span class="block font-bold text-blue text-4xl mt-1 lg:text-5xl dark:text-white hover:text-black dark:hover:text-green transition duration-300 ease-in-out">Vendra</span></h1>
+                    <h2 class="font-medium text-secondary text-lg mb-3 lg:text-2xl transition duration-300 ease-in-out"><span class="hover:text-black dark:hover:text-green">Vendra </span> <span class="hover:text-black dark:hover:text-green transition duration-300 ease-in-out">Suryandala</span><span class="hover:text-black dark:hover:text-green transition duration-300 ease-in-out"> Izdiharsyah</span></h2>
+                    <div class="flex items-center mb-16">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/vendra_s.i" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-blue text-blue  hover:border-green hover:bg-blue hover:text-white transition ease-in-out duration-300 dark:text-slate-300 dark:border-slate-300 dark:hover:bg-green">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/vendra.suryandala" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-blue text-blue hover:border-blue hover:bg-blue hover:text-white transition ease-in-out duration-300 dark:text-slate-300 dark:border-slate-300 dark:hover:bg-green">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+
+                         <!-- Linkedin -->
+                         <a href="https://www.linkedin.com/in/vendra-suryandala-i-a17351278/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-blue text-blue hover:border-blue hover:bg-blue hover:text-white transition ease-in-out duration-300 dark:border-slate-300 dark:hover:text-white dark:hover:bg-green
+                         dark:text-slate-300">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+
+                         <!-- Github -->
+                         <a href="https://github.com/VendraSuryandala?tab=repositories" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-blue text-blue hover:border-blue hover:bg-blue hover:text-white transition ease-in-out duration-300 dark:border-slate-300 dark:text-slate-300 dark:hover:bg-green">
+                            <svg role="img" viewBox="0 0  24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                    </div>
+                    
+                    <a href="#contact" class="relative text-base font-bold text-blue border-2 border-blue bg-transparent py-3 px-8 hover:bg-blue hover:text-white transition duration-300 ease-in-out dark:bg-transparent dark:border-green dark:text-green dark:hover:bg-green dark:hover:text-white">Hire Me</a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+                        <img src="dist/img/hero/vendra2.png" alt="Vendra" class="relative max-w-full mx-auto top-0 z-20 transition hover:translate-x-6 "/>
+                        <span class="absolute bottom-0 -x-20">
+                            <svg width="550" height="800" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  fill="#08BDBA"
+                                  d="M52.1,-30.1C65.5,-6.9,72.8,19.7,63.2,39.9C53.5,60.1,26.7,73.9,3.3,72C-20.2,70.1,-40.4,52.5,-51,31.8C-61.5,11.1,-62.5,-12.7,-52.4,-34C-42.3,-55.4,-21.1,-74.1,-0.9,-73.6C19.4,-73.1,38.7,-53.3,52.1,-30.1Z"
+                                  transform="translate(100 100)"
+                        
+                                />
+                              </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- About section start -->
+    <section id="about" class="pt-36 pb-32 dark:bg-dark transition ease-in-out duration-300">
+        <div class="container">
+                <div class="w-full justify-center">
+                
+                    <h2 class="font-bold uppercase text-blue text-3xl mb-5 max-w-md lg:text-4xl dark:text-green">Tentang Saya</h2>
+                    <p class="font-medium text-base text-black max-w-xl lg:text-lg dark:text-white">Nama saya Vendra Suryandala Izdiharsyah, biasa dipanggil Vendra. Saya adalah lulusan S1 Informatika di Universitas Amikom Purwokerto pada awal tahun 2023. Saya memiliki beberapa portofolio sebagai pendukung dalam mencari pekerjaan. Bagi saya, berusaha merupakan kunci utama kesuksesan. Dengan adanya usaha ini saya bertanggung jawab atas semua pekerjaan yang diberikan dan berkomitmen dalam memberi kinerja terbaik bagi perusahaan tersebut.</p>
+                </div> 
+        </div>
+
+    </section>
+    <!-- About section end -->
+
+    <!-- Portfolio Desain start -->
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-900 border border-2 border-slate-300 w-full dark:border-slate-800 transition ease-in-out duration-300">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h2 class="font-bold text-dark text-4xl mb-3 dark:text-white transition duration-300 ease-in-out">Project <span class="text-blue dark:text-green transition duration-300 ease-in-out">Saya</span></h2>
+                    <p class="font-medium text-md pt-6 text-black dark:text-slate-300 transition duration-300 ease-in-out">Berikut ini merupakan project yang pernah saya kerjakan:</p>
+                </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
+                    <!-- card android -->
+                    <a href="#android" class=" border border-4 border-green text-center py-20 px-5 rounded-2xl cursor-pointer text-white ease-in duration-200 items-center font-inter group hover:border-primary shadow-md shadow-black hover:border-8" style="background-image: url('https://source.unsplash.com/android/100x50)" >
+                        <!-- logo android -->
+                        <div class="inline-block text-android">
+                        <svg role="img" width="70" height="70" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Android</title><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993 0 .5511-.4483.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.2439 13.8533 7.8508 12 7.8508s-3.5902.3931-5.1367 1.0989L4.841 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/></svg></div>                      
+                        <h3 class="text-md font-bold font-roboto py-4 group-hover:text-green mb-3">Android Development</h3>
+                        <h3 class="group-hover:text-green"> Lihat Project >></h3>
+                    </a>
+                    <!-- card figma -->
+                    <a href="#figma" class=" border border-4 border-green text-center py-20 px-5 rounded-2xl cursor-pointer text-white ease-in duration-200 items-center font-inter group hover:border-primary shadow-md shadow-black hover:border-8"style="background-image: url(https://source.unsplash.com/android/100x50)">
+                        <!-- logo figma -->
+                        <div class="inline-block text-figma left-1/2 translate-x-6">
+                        <svg role="img" width="70" height="70" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Figma</title><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></svg></div>
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-chart-column text-4xl"></i>
+                        </div>
+                        <h3 class="text-md font-bold font-roboto py-4 group-hover:text-green mb-3">UI/UX Design</h3>
+                        <h3 class="group-hover:text-green"> Lihat Project >></h3>                   
+                    </a>
+                    <!-- card canva -->
+                    <a href="#Copywritting" class="border-4 border border-green text-center py-20 px-5 rounded-2xl cursor-pointer text-white ease-in duration-200 items-center font-inter group hover:border-primary shadow-md shadow-black hover:border-8"style="background-image: url('https://source.unsplash.com/android/100x50)">
+                        <!-- logo figma -->
+                        <div class="inline-block text-canva left-1/2 translate-x-6">
+                        <svg role="img" width="70" height="70" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Canva</title><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zM6.962 7.68c.754 0 1.337.549 1.405 1.2.069.583-.171 1.097-.822 1.406-.343.171-.48.172-.549.069-.034-.069 0-.137.069-.206.617-.514.617-.926.548-1.508-.034-.378-.308-.618-.583-.618-1.2 0-2.914 2.674-2.674 4.629.103.754.549 1.646 1.509 1.646.308 0 .65-.103.96-.24.5-.264.799-.47 1.097-.8-.073-.885.704-2.046 1.851-2.046.515 0 .926.205.96.583.068.514-.377.582-.514.582s-.378-.034-.378-.17c-.034-.138.309-.07.275-.378-.035-.206-.24-.274-.446-.274-.72 0-1.131.994-1.029 1.611.035.275.172.549.447.549.205 0 .514-.31.617-.755.068-.308.343-.514.583-.514.102 0 .17.034.205.171v.138c-.034.137-.137.548-.102.651 0 .069.034.171.17.171.092 0 .436-.18.777-.459.117-.59.253-1.298.253-1.357.034-.24.137-.48.617-.48.103 0 .171.034.205.171v.138l-.136.617c.445-.583 1.097-.994 1.508-.994.172 0 .309.102.309.274 0 .103 0 .274-.069.446-.137.377-.309.96-.412 1.474 0 .137.035.274.207.274.171 0 .685-.206 1.096-.754l.007-.004c-.002-.068-.007-.134-.007-.202 0-.411.035-.754.104-.994.068-.274.411-.514.617-.514.103 0 .205.069.205.171 0 .035 0 .103-.034.137-.137.446-.24.857-.24 1.269 0 .24.034.582.102.788 0 .034.035.069.07.069.068 0 .548-.445.89-1.028-.308-.206-.48-.549-.48-.96 0-.72.446-1.097.858-1.097.343 0 .617.24.617.72 0 .308-.103.65-.274.96h.102a.77.77 0 0 0 .584-.24.293.293 0 0 1 .134-.117c.335-.425.83-.74 1.41-.74.48 0 .924.205.959.582.068.515-.378.618-.515.618l-.002-.002c-.138 0-.377-.035-.377-.172 0-.137.309-.068.274-.376-.034-.206-.24-.275-.446-.275-.686 0-1.13.891-1.028 1.611.034.275.171.583.445.583.206 0 .515-.308.652-.754.068-.274.343-.514.583-.514.103 0 .17.034.205.171 0 .069 0 .206-.137.652-.17.308-.171.48-.137.617.034.274.171.48.309.583.034.034.068.102.068.102 0 .069-.034.138-.137.138-.034 0-.068 0-.103-.035-.514-.205-.72-.548-.789-.891-.205.24-.445.377-.72.377-.445 0-.89-.411-.96-.926a1.609 1.609 0 0 1 .075-.649c-.203.13-.422.203-.623.203h-.17c-.447.652-.927 1.098-1.27 1.303a.896.896 0 0 1-.377.104c-.068 0-.171-.035-.205-.104-.095-.152-.156-.392-.193-.667-.481.527-1.145.805-1.453.805-.343 0-.548-.206-.582-.55v-.376c.102-.754.377-1.2.377-1.337a.074.074 0 0 0-.069-.07c-.24 0-1.028.824-1.166 1.373l-.103.445c-.068.309-.377.515-.582.515-.103 0-.172-.035-.206-.172v-.137l.046-.233c-.435.31-.87.508-1.075.508-.308 0-.48-.172-.514-.412-.206.274-.445.412-.754.412-.352 0-.696-.24-.862-.593-.244.275-.523.553-.852.764-.48.309-1.028.549-1.68.549-.582 0-1.097-.309-1.371-.583-.412-.377-.651-.96-.686-1.509-.205-1.68.823-3.84 2.4-4.8.378-.205.755-.343 1.132-.343zm9.77 3.291c-.104 0-.172.172-.172.343 0 .274.137.583.309.755a1.74 1.74 0 0 0 .102-.583c0-.343-.137-.515-.24-.515z"/></svg></div>
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-chart-column text-4xl"></i>
+                        </div>
+                        <h3 class="text-md font-bold font-roboto py-4 group-hover:text-green mb-3">Copywritting Design</h3>
+                        <h3 class="group-hover:text-green"> Lihat Project >></h3>                   
+                    </a>
+                </div>
+            </div>
+        </div>       
+    </section>
+    <!-- Portofolio Desain end -->
+
+    <!-- section android -->
+    <section id="android" class="pt-36 pb-16 bg-slate-100 dark:bg-dark border border-2 border-slate-300 w-full dark:border-slate-800 transition ease-in-out duration-300">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-4">
+                    <h2 class="font-bold text-3xl mb-8 text-blue dark:text-green">Android <span class="text-black dark:text-white">Development</span></h2>
+                    <p class="font-medium text-md text-black dark:text-white mb-9">Dalam project android development ini saya membuat suatu aplikasi pada Android Studio sebagai tugas akhir/skripsi saya. Berikut adalah projectnya:</p>
+                </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="mb-12 p-4 md:w-1/2 text-center">
+                        <img src="dist/img/projects/android/android4.PNG" alt="android1" width="w-full" class="rounded-md  inline-block shadow-md shadow-black border border-2 border-black">
+                    <h3 class="font-semibold text-xl text-dark mt-9 mb-3 dark:text-white">1. Antarmuka Halaman Login Hasilbumi.id Mobile</h3>
+                    <p class="font-medium text-base text-secondary">Pada Halaman login aplikasi tersebut sudah terhubung kedalam database dengan menggunakan REST API terhadap website hasilbumi.id sehingga saling terintegrasi satu sama lainnya.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2 text-center">
+                        <img src="dist/img/projects/android/android2.PNG" alt="android2" width="w-full" class="rounded-md inline-block shadow-md shadow-black border border-2 border-black">              
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">2. Halaman Menu Utama</h3>
+                    <p class="font-medium text-base text-secondary">Pada halaman menu utama dengan interface yang memudahkan user dalam melakukan aktivitas dan mengikuti tema yang sesuai dengan website hasilbumi.id.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2 text-center">
+                        <img src="dist/img/projects/android/android3.PNG" alt="android3" width="w-full" class="rounded-md inline-block shadow-md shadow-black border border-2 border-black">
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">3. Halaman Kategori produk yang tersedia</h3>
+                    <p class="font-medium text-base text-secondary">Dengan adanya produk tersebut sesuai dengan data yang ada didalam website, sehingga apabila data terubah ataupun terdapat data yang baru maka data produk akan tampil juga di dalam aplikasi hasilbumi.id mobile.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2 text-center "> 
+                        <img src="dist/img/projects/android/android1.PNG" alt="androi4" width="w-full" class="rounded-md inline-block shadow-md shadow-black border border-2 border-black">
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">4. Halaman Pemesanan</h3>
+                    <p class="font-medium text-base text-secondary">Apabila user ingin memesan produk tersebut, maka user akan mengisi sebuah data sebagai tempat dikirimnya produk tersebut sesuai dengan alamat yang terinput.</p>
+                </div>
+                <div class="mb-3 p-4 md:w-1/2 text-center">
+                        <img src="dist/img/projects/android/android5.PNG" alt="androi4" class="rounded inline-block shadow-md shadow-black border border-2 border-black">               
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Hasilbumi.id Mobile</h3>
+                    <p class="font-medium text-base text-secondary">Untuk melihat full source code bisa klik link dibawah ini :</p>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <a href="https://github.com/VendraSuryandala/Hasilbumi-MobileApps.git" target="_blank" class="text-base font-bold text-blue border-4 border-blue bg-transparent py-3 px-8 rounded-full hover:bg-blue hover:text-white transition duration-300 ease-in-out dark:bg-transparent dark:border-green dark:text-green dark:hover:bg-green dark:hover:text-white">Lihat project</a>
+            </div>
+        </div>
+    </section>
+    <!-- section android akhir -->
+
+    <!-- section figma -->
+    <section id="figma" class="pt-36 pb-16 bg-slate-100 dark:bg-dark border border-2 border-slate-300 w-full dark:border-slate-800 transition ease-in-out duration-300">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-4">
+                    <h2 class="font-bold text-3xl mb-8 text-blue dark:text-green">UI/UX <span class="text-black dark:text-white">Design</span></h2>
+                    <p class="font-medium text-md text-black dark:text-white mb-9">Dalam desain UI/UX ini merupakan sebuah prototype dari sebuah aplikasi android yang saya buat. Berikut adalah desain prototype nya :</p>
+                </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="mb-3 p-4 md:w-1/2 text-center">
+                        <img src="dist/img/projects/UI UX/UI1.PNG" alt="androi4" class="rounded inline-block shadow-md shadow-black border border-2 border-black">               
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Prototype Hasilbumi.id</h3>
+                    <p class="font-medium text-base text-secondary">Untuk melihat full Desain bisa klik link dibawah ini :</p>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <a href="https://www.figma.com/file/lEeh0VzSv18UC5MfL4q3w4/Hasilbumi?type=design&node-id=0%3A1&t=n5kukU4lUfBwgC7g-1" target="_blank" class="text-base font-bold text-blue border-4 border-blue bg-transparent py-3 px-8 rounded-full hover:bg-blue hover:text-white transition duration-300 ease-in-out dark:bg-transparent dark:border-green dark:text-green dark:hover:bg-green dark:hover:text-white">Lihat project</a>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Figma akhir -->
+
+    <!-- section Copywritting -->
+    <section id="Copywritting" class="pt-36 pb-16 bg-slate-100 dark:bg-dark border border-2 border-slate-300 w-full dark:border-slate-800 transition ease-in-out duration-300">
+    <div class="container">
+        <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-4">
+                <h2 class="font-bold text-3xl mb-8 text-blue dark:text-green">Copywritting <span class="text-black dark:text-white">Design</span></h2>
+                <p class="font-medium text-md text-black dark:text-white mb-9">Dibawah ini merupakan desain copywritting dalam digital marketing yang pernah saya buat sebagai berikut :</p>
+            </div>
+        </div>
+        <div class="relative max-w-xl mx-auto ">
+            <!-- Image Slider -->
+                <ul id="slider">
+                    <li class="h-[50vh] relative border border-2 border-black shadow-md shadow-black">
+                        <img src="/dist/img/projects/Copywritting/cw2.jpg" alt="" class="h-full w-full object-cover">                                
+                    </li>
+
+                    <li class="h-[50vh] relative hidden border border-2 border-black shadow-md shadow-black">
+                        <img src="/dist/img/projects/Copywritting/cw3.jpg" alt="" class="h-full w-full object-cover">             
+                    </li>
+
+                    <li class="h-[50vh] relative hidden bg-top border border-2 border-black shadow-md shadow-black">
+                        <img src="/dist/img/projects/Copywritting/cw1.png" alt="" class="h-full w-full  object-cover">                        
+                    </li>
+
+                    <li class="h-[50vh] relative hidden border border-2 border-black shadow-md shadow-black">
+                        <img src="/dist/img/projects/Copywritting/cw4.png" alt="" class="h-full w-full bg-top object-cover">                    
+                    </li>
+
+                    <li class="h-[50vh] relative hidden border border-2 border-black shadow-md shadow-black">
+                        <img src="/dist/img/projects/Copywritting/cw6.png" alt="" class="h-full w-full  bg-top object-cover">                    
+                    </li>
+
+                </ul>
+           <!-- Image slider akhir -->
+
+           <!-- button slider -->
+            <div class="absolute px-5 flex h-full w-full top-0 left-0">
+            <div class="my-auto  w-full flex justify-between">
+                <button onclick="prev()" class="bg-white p-3 rounded-full bg-opacity-50 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+                      </svg>                      
+                </button>
+                <button onclick="next()" class="bg-white p-3 rounded-full bg-opacity-50 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                      </svg>
+                      
+                </button>
+            </div>
+            </div>
+            <!-- button slider akhir -->
+            
+        </div>
+        <div class="mt-10 text-center">
+            <a href="https://github.com/VendraSuryandala/Copywritting-Design.git" target="_blank" class="text-base font-bold text-blue border-4 border-blue bg-transparent py-3 px-8 rounded-full hover:bg-blue hover:text-white transition duration-300 ease-in-out dark:bg-transparent dark:border-green dark:text-green dark:hover:bg-green dark:hover:text-white">Lihat Desain</a>
+        </div>
+    </div>
+    </section>
+    <!-- Portfolio Copywritting akhir -->
+
+    <!-- Kampus start -->
+    <section id="kampus" class="pt-32 pb-32 bg-slate-100 dark:bg-dark border border-2 border-slate-300 dark:border-slate-800 transition ease-in-out duration-300">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2 ">
+                    <h4 class="font-bold uppercase text-blue dark:text-green text-lg mb-3 transition ease-in-out duration-300">Pendidikan</h4>
+                    <h2 class="font-bold text-black text-3xl mb-5 max-w-md lg:text-4xl dark:text-white dark:font-sans transition duration-300 ease-in-out">UNIVERSITAS AMIKOM PURWOKERTO</h2>
+                    <p class="font-medium text-base dark:text-slate-400 max-w-xl lg:text-lg">Universitas Amikom Purwokerto merupakan perguruan tinggi yang berkonsentrasi dibidang Teknologi dan Bisnis Digital. Dengan sarana dan prasarana yang lengkap ditunjang dengan dosen dan praktisi yang telah berpengalaman didunia pendidikan dan industri, siap menjawab tantangan generasi Millenial memasuki dunia kerja pada era revolusi industri 4.0.Universitas Klabat adalah pusat pendidikan tinggi yang didirikan oleh Gereja Masehi Advent Hari Ketujuh untuk menyediakan mahasiswa bagi pelayanan di Indonesia dan tempat lainnya.</p>
+                    <div class="mt-5">
+                        <p class="font-light text-base text-black max-w-xl lg:text-lg dark:text-white">Informatics Engineering | 2018 - 2023</p>
+                        <p class="font-light text-base text-black max-w-xl lg:text-lg dark:text-white">GPA : 3.45 / 4.00</p>
+                        <p class="font-light text-base text-black max-w-xl lg:text-lg dark:text-white">Thesis : "Aplikasi Berbasis Android Yang Terintegrasi Pada Website Hasilbumi.id Sebagai Media Pemasaran Produk Pertanian Di Era Digital"</p>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white transition duration-300 ease-in-out">PENGALAMAN<span class="text-blue dark:text-green font-semibold transition duration-300 ease-in-out"> ORGANISASI</h3>
+                    <p class="font-medium text-base text-slate-400 mb-6 lg:text-lg">Selain pendidikan formal, saya juga memiliki pengalaman organisasi sebagai beriut:</p>
+                    <ul class="list-disc">
+                        <li class="list-disc text-black dark:text-white">
+                            <p class="font-light text-base text-black lg:text-lg dark:text-white">ORGANISASI PRAMUKA di SMA Periode 2016-2017</p>
+                        </li>
+                        <li class="list-disc mt-5 text-black dark:text-white">
+                            <p class="font-light text-base text-black lg:text-lg dark:text-white">Anggota Unit Jurnalistik di Dewan Kerja Cabang (DKC) Kwarcab Banyumas Periode 4 Tahun 2016-2018</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Kampus end -->
+
+    <!-- Hire Section -->
+    <section id="contact" class="text-gray-600 body-font">
+        <form action="https://formspree.io/f/meqwbroy" method="POST" >
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Terima kasih telah berkunjung di web portofolio saya.</p>
+          </div>
+          <!-- full name -->
+          <div class="lg:w-1/3 w-full mx-auto px-8  ">
+            <div class="relative flex-grow w-full">
+              <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
+              <input type="text" id="full-name" name="full-name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+
+            <!-- subject -->
+            <div class="relative flex-grow w-full">
+                <label for="subject" class="leading-7 text-sm text-gray-600">subject</label>
+                <input type="text" id="subject" name="subject" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+
+              <!-- email -->
+            <div class="relative flex-grow w-full">
+              <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+              <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+
+            <!-- message -->
+            <div class="relative flex-grow w-full">
+                <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                <textarea type="text" id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></textarea>
+              </div>
+
+            <button type="submit" class=" mt-3 w-full text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Kirim</button>
+          </div>
+        </div>
+    </form>
+      </section>
+    <!-- Hire Section akhir -->
+    
+    <!-- Footer start -->
+    <footer class="pt-24 pb-12 bg-dark">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 mt-10 text-slate-400 font-medium md:w-1/2">
+                    <h2 class="font-bold text-4xl text-white mb-5">Vendra Suryandala Izdiharsyah</h2>
+                    <h3 class="font-bold text-2xl mb-2">Hubungi saya</h3>
+                    <p>vendra2333@gmail.com</p>
+                    <p>Purwokerto Barat, Jawa Tengah</p>
+                    <p>Kabupaten Banyumas</p>
+                </div>
+                <div class="w-full px-4 mb-12 mt-10 md:w-1/2">
+                    <h3 class="font-semibold text-2xl text-white mb-5">Tautan</h3>
+                    <ul class="text-slate-400">
+                        <li>
+                            <a href="#home" class="inline-block text-base hover:text-primary mb-3">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="inline-block text-base hover:text-primary mb-3">Tentang Saya</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="inline-block text-base hover:text-primary mb-3">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#kampus" class="inline-block text-base hover:text-primary mb-3">Pendidikan</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block text-base hover:text-primary mb-3">Hubungi Saya</a>
+                        </li>                      
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full pt-10 border-t border-slate-500">
+                <div class="flex items-center justify-center mb-5">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/vendra_s.i" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-blue text-blue  hover:border-green hover:bg-blue hover:text-white transition ease-in-out duration-300 dark:text-slate-300 dark:border-slate-300 dark:hover:bg-green">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/vendra.suryandala" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-blue text-blue hover:border-blue hover:bg-blue hover:text-white transition ease-in-out duration-300 dark:text-slate-300 dark:border-slate-300 dark:hover:bg-green">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+
+                         <!-- Linkedin -->
+                         <a href="https://www.linkedin.com/in/vendra-suryandala-i-a17351278/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-blue text-blue hover:border-blue hover:bg-blue hover:text-white transition ease-in-out duration-300 dark:border-slate-300 dark:hover:text-white dark:hover:bg-green
+                         dark:text-slate-300">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+
+                         <!-- Tiktok -->
+                         <a href="https://www.tiktok.com/Venn" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-blue text-blue hover:border-blue hover:bg-blue hover:text-white transition ease-in-out duration-300 dark:border-slate-300 dark:text-slate-300 dark:hover:bg-green">
+                            <svg role="img" viewBox="0 0  24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <p class="font-medium text-sm text-slate-400 text-center">@Copyright Vendra Suryandala Izdiharsyah</p>
+                <p class="font-medium text-sm text-slate-400 text-center">dibuat dengan penuh ❤ </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Back to top -->
+    <a href="#home" id="to-top" class="fixed hidden justify-center items-center bottom-4 right-4 p-4 z-[9999] h-14 w-14 rounded-full bg-blue dark:bg-green animate-pulse">
+        <span class="block h-5 w-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+    </a>
+    <!-- end -->
+
+    <script src="dist/js/script.js"></script>
+
+
+</body>
+</html>
